@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step10_form2.html</title>
+</head>
+<body>
+    <h1>회원가입 폼 입니다.</h1>
+    <form action="signup.jsp">
+    <label for="email">이메일</label>
+    <input type="text" id="email" name="email"><br/>
+    <fieldset>
+        <legend>성별 정보 선택</legend>
+        <label>
+            <input type="radio" name="gender" value="man">남자
+        </label>
+        <label>
+            <input type="radio" name="gender" value="woman" checked>여자
+        </label>
+        <label>
+        <input type="radio" name="gender" value="no" checked>모름
+    </label>
+    </fieldset>
+    <fieldset>
+        <legend>취미 정보 선택</legend>
+        <label>
+            <input type="checkbox" name="hobby" value="piano">피아노
+        </label>
+        <label>
+            <input type="checkbox" name="hobby" value="carom">당구
+        </label>
+        <label>
+            <input type="checkbox" name="hobby" value="beer">맥주
+        </label>
+        <label>
+            <input type="checkbox" name="hobby" value="etc">기타
+        </label>
+    </fieldset>
+    <fieldset> 
+        <label for="job">직업선택</label>
+        <select name="job" id="job">
+            <option value="">선택</option>
+            <option value="teacher">선생님</option>
+            <option value="doctor">의사</option>
+            <option value="developer">개발자</option>
+            <option value="etc">기타</option>
+        </select>
+        <br/>
+        <label for="lunch">점심 메뉴 선택</label>
+        <select name="lunch" id="lunch" multiple>
+            <option value="">선택</option>
+            <option value="m1">자장면</option>
+            <option value="m2">짬뽕</option>
+            <option value="m3">군만두</option>
+            <option value="m4">탕수육</option>
+        </select>
+    </fieldset>
+    <br/>
+    <button type="submit">가입</button>
+    <button type="reset">취소</button>
+    </form>
+</body>
+</html>

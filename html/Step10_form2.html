@@ -49,13 +49,35 @@
         <br/>
         <label for="lunch">점심 메뉴 선택</label>
         <select name="lunch" id="lunch" multiple>
-            <option value="">선택</option>
+            <!--option 요소에 value가 없으면 inner text가 value로 전송된다.-->
+            <option>선택</option>
             <option value="m1">자장면</option>
-            <option value="m2">짬뽕</option>
-            <option value="m3">군만두</option>
-            <option value="m4">탕수육</option>
+            <option>짬뽕</option>
+            <option>군만두</option>
+            <option>탕수육</option>
         </select>
     </fieldset>
+    <br/>
+    <label for="coffee">커피 선택</label>
+    <select name="coffee" id="coffee">
+        <optgroup label="에스프레소">
+            <option>아메리카노</option>
+            <option>카페라떼</option>
+            <option>카페모카</option>
+        </optgroup>
+        <optgroup label="프라프치노">
+            <option>카라멜 프라프치노</option>
+            <option>자바칩 프라프치노</option>
+            <option>오렌지 프라프치노</option>
+        </optgroup>
+    </select>
+    <br/>
+    <label for="file">첨부 파일</label>
+    <input type="file" id="file" name="file"/>
+    <br/>    
+
+    <label for="comment">하고 싶은 말</label><br/>
+    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
     <br/>
     <button type="submit">가입</button>
     <button type="reset">취소</button>

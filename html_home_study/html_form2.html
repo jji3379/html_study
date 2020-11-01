@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldset, Select, optgroup review</title>
+</head>
+<body>
+    <form action="login.jsp">
+    <fieldset>
+        <legend>legend는 그룹 이름!!</legend>
+        <label for="radio">남자</label>
+        <input type="radio" id="raido" name="gender" value="man">
+        <label for="radio">여자</label>
+        <input type="radio" id="raido" name="gender" value="woman">
+    </fieldset>
+    <br/>
+    <fieldset>
+        <label>점심 메뉴</label>
+        <select name="보내지는 값" id="구분짓는 값" multiple>
+            <option>탕수육</option>
+            <option>육개장</option>
+            <option>장조림</option>
+        </select>
+    </fieldset>
+    <br/>
+    <button type="submit">값을 확인해보자</button>
+    <br/>
+    <label for="coffee">optgroup테스트 커피 메뉴</label>
+    <select id="coffee" name="커피 메뉴 결정">
+        <optgroup label="더치커피">
+            <option>콜드 브루</option>
+            <option>케냐AA</option>
+        </optgroup>
+            <optgroup label="스무디">
+                <option>키위 스무디</option>
+                <option>유자 스무디</option>
+            </optgroup>
+    </select>
+    <br/>
+    <textarea id="text" name="뭐라고 썼을까" cols="30" rows="10"></textarea>
+</form>
+</body>
+</html>

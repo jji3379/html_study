@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initital-scale=1.0">
+    <title>form 연습중</title>
+</head> 
+<body>
+  <h1>폼 요소 작성하기</h1>
+  <form action="login.jsp">
+      <label for="청각">이메일</label>
+      <input type="text" id="청각" name="email">
+      <label for="후각">비밀번호</label>
+      <input type="password" id="후각" name="pwd">
+      <button type="submit">제출 버튼</button>
+      <br/>
+      <label>
+          다른 버전 라벨 <input type="text" name="login"> 
+      </label>
+      <br/>
+      <label>
+          남자<input type="radio" name="gender" value="man" checked>
+      </label>
+      <label>
+          여자<input type="radio" name="gender" value="woman">
+      </label>
+      <label for="확인">확인 버튼</label>
+      <input type="checkbox" id="확인" name="homework">
+      <br/>
+      <label for="file">파일 제출</label>
+      <input type="file" id="file" name="파일">
+  </form>  
+</body>   
+</html>
